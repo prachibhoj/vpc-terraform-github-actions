@@ -20,8 +20,7 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
       - name: Terraform Init
-        run: |
-        cd vpc-terraform-github-actions
+        run: cd vpc-terraform-github-actions
         id: init
         run: terraform init
         working-directory: ./vpc-terraform-github-actions
